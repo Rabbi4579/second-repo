@@ -3,3 +3,20 @@
     height: 300px;
     background-color: yellow;
 }
+table{
+    border-collapse: collapse;
+    margin:50px;
+}
+.trow, td,th{
+    border: 1px solid green;
+    padding: 20px;
+    border-spacing: 0px;
+    margin: 0px;
+}
+input{
+    display: block;
+    margin-bottom: 30px;
+}
+.enter{
+    display: block;
+}
