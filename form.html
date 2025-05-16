@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input form</title>
+</head>
+<body>
+    <h2>User input form: </h2>
+    <form>
+        <fieldset>
+            <legend>Personl Information: </legend>
+            <label for="name">Full Name: </label><br>
+                <input type="text" id="name" name="name" placeholder="Input your name"><br>
+            <label for="email"> Email: </label><br>
+                <input type="email" id="email" name="email" placeholder="Input your email"><br>
+            <label for="tel" >Mobile: </label><br>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number"><br>
+            <label for="date">Date: </label><br>
+            <input type="date" id="date" name="date" placeholder="Date">
+        </fieldset>
+        <fieldset>
+            <legend>Academic Result: </legend>
+            <label for="depertment">depertment</label><br>
+            <select name="depertment" id="depertment">
+                <option value="cse">CSE</option>
+                <option value="cse">CSE</option>
+                <option value="cse">CSE</option>
+            </select>
+        </fieldset>
+        
+            
+            <label for="message">Text Area: </label><br>
+            <textarea name="textarea" id="message" rows="20" cols="40" oninput="countercharacter()"></textarea>
+            <h3 >Character Count: <span id="count"></span></h3>
+        
+    </form>
+
+
+    <script>
+        function countercharacter(){
+            var text = document.getElementById("message").value;
+            var length = text.length;
+            document.getElementById("count").innerHTML = length;
+        }
+    </script>
+</body>
+</html>
